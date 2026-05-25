@@ -5,3 +5,19 @@ def sumaLista(lista, pi, pf):
 
     else:
         return lista[pi] + sumaLista(lista, pi + 1, pf)
+    
+tam = int(input("Ingrese tamaño de la lista: "))
+
+lista = []
+
+for i in range(tam):
+
+    num = int(input("Ingrese número: "))
+    lista.append(num)
+
+print("Lista:", lista)
+
+pi = int(input("Ingrese posición inicial: "))
+pf = int(input("Ingrese posición final: "))
+
+print("Resultado:", sumaLista(lista, pi, pf))
