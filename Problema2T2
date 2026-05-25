@@ -1,0 +1,7 @@
+def sumaLista(lista, pi, pf):
+
+    if pi == pf:
+        return lista[pi]
+
+    else:
+        return lista[pi] + sumaLista(lista, pi + 1, pf)
